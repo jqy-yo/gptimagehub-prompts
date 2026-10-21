@@ -2,9 +2,13 @@
   "snapshot": "2026-10-21T06:19:36.539Z",
   "records": 286,
   "excluded": 303,
-  "sha256": "84c90d2e92fcf61003b321d612479a7de6b108b2ba49b5c8af9f5af489d1f1ea",
+  "sha256": "75e06ed6af3b1e005d787f9530c6799f79b71fe56c3c1e4c6b4981d3182bf7c1",
   "source": "https://www.gptimagehub.com/datasets/prompts.jsonl",
   "website": "https://www.gptimagehub.com",
   "selection": "Only attributed CC BY 4.0 records from the two named source collections. Records without a known license and image binaries are excluded.",
-  "changes": "Structured export, category corrections, metadata normalization; source authors and source links retained."
+  "changes": "Structured export, category corrections, metadata normalization; source authors and source links retained. Added public cover/example URLs and visual galleries; prompt text is unchanged.",
+  "media_updated_at": "2026-10-21T07:23:18.058Z",
+  "records_with_covers": 286,
+  "records_with_generated_examples": 6,
+  "media": "Image URLs are external previews, not included image binaries or a grant of image rights. Generated previews are identified separately."
 }
