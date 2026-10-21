@@ -48,7 +48,7 @@ These six examples were newly generated for GPT Image Hub with the built-in imag
 - [Snapshot manifest and SHA-256](manifest.json)
 - [Live dataset methodology](https://www.gptimagehub.com/prompt-dataset-methodology)
 - [API documentation](https://www.gptimagehub.com/api-docs)
-- [Hugging Face dataset card](DATASET_CARD.md) — prepared for a future upload; no Hugging Face dataset is published.
+- [Hugging Face dataset](https://huggingface.co/datasets/jqyyyy/gptimagehub-prompts) · [Dataset card source](DATASET_CARD.md)
 
 Each record includes a title, full prompt text, category, tags, model hint, canonical page, author, source collection, license, `cover_image_url`, and `example_image_urls`. All 286 records have a cover; six also have a newly generated example. The remaining source covers are labeled separately in the galleries. Image URLs point to the public CDN, so cloning the repository does not download image binaries.
 
