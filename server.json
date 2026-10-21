@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.jqy-yo/gptimagehub",
+  "title": "GPT Image Hub",
+  "description": "Search attributed image prompts, retrieve full templates, and browse GPT Image Hub categories.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.gptimagehub.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.gptimagehub.com/mcp"
+    }
+  ]
+}

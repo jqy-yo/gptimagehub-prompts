@@ -1,0 +1,44 @@
+{
+  "locale": "pt-BR",
+  "status": "AI-reviewed draft; native-speaker review requested; application changes not yet deployed",
+  "pages": [
+    "https://www.gptimagehub.com/pt-BR/models"
+  ],
+  "modelLabels": [
+    {
+      "key": "qualityTiers",
+      "english": "quality tiers across selected models",
+      "proposed": "Níveis de qualidade por modelo"
+    },
+    {
+      "key": "officialSources",
+      "english": "official source links on every model page",
+      "proposed": "Links para as fontes oficiais em cada página de modelo"
+    },
+    {
+      "key": "careful",
+      "english": "Where to be careful",
+      "proposed": "Pontos de atenção"
+    },
+    {
+      "key": "nextDescription",
+      "english": "Use the generator when you already know the model, or compare all supported models when the prompt needs a different balance of speed, detail, and reference inputs.",
+      "proposed": "Se você já escolheu um modelo, vá direto para o gerador. Para avaliar velocidade, nível de detalhe e suporte a imagens de referência, compare os modelos disponíveis."
+    },
+    {
+      "key": "useThisModel",
+      "english": "Use this model",
+      "proposed": "Gerar com este modelo"
+    },
+    {
+      "key": "capabilityMatrix",
+      "english": "Capability matrix",
+      "proposed": "Comparativo de recursos"
+    },
+    {
+      "key": "decisionRules",
+      "english": "Decision rules",
+      "proposed": "Critérios de escolha"
+    }
+  ]
+}

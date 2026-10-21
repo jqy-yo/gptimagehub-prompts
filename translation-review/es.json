@@ -1,0 +1,59 @@
+{
+  "locale": "es",
+  "status": "AI-reviewed draft; native-speaker review requested; application changes not yet deployed",
+  "pages": [
+    "https://www.gptimagehub.com/es/models"
+  ],
+  "modelLabels": [
+    {
+      "key": "modelGuidesTitle",
+      "english": "Choose the right AI image model before you write the prompt",
+      "proposed": "Elige el modelo de imagen adecuado antes de escribir el prompt"
+    },
+    {
+      "key": "qualityTiers",
+      "english": "quality tiers across selected models",
+      "proposed": "Niveles de calidad según el modelo"
+    },
+    {
+      "key": "officialSources",
+      "english": "official source links on every model page",
+      "proposed": "Enlaces a fuentes oficiales en cada página de modelo"
+    },
+    {
+      "key": "fastAnswer",
+      "english": "Fast answer for model choice",
+      "proposed": "Claves para elegir un modelo"
+    },
+    {
+      "key": "careful",
+      "english": "Where to be careful",
+      "proposed": "Aspectos que debes tener en cuenta"
+    },
+    {
+      "key": "nextTitle",
+      "english": "Start from a prompt template or compare models first",
+      "proposed": "Empieza con una plantilla de prompt o compara los modelos"
+    },
+    {
+      "key": "nextDescription",
+      "english": "Use the generator when you already know the model, or compare all supported models when the prompt needs a different balance of speed, detail, and reference inputs.",
+      "proposed": "Si ya has elegido un modelo, pasa al generador. Si necesitas valorar la velocidad, el nivel de detalle o el uso de imágenes de referencia, compara los modelos disponibles."
+    },
+    {
+      "key": "useThisModel",
+      "english": "Use this model",
+      "proposed": "Generar con este modelo"
+    },
+    {
+      "key": "capabilityMatrix",
+      "english": "Capability matrix",
+      "proposed": "Tabla comparativa de funciones"
+    },
+    {
+      "key": "decisionRules",
+      "english": "Decision rules",
+      "proposed": "Criterios de elección"
+    }
+  ]
+}

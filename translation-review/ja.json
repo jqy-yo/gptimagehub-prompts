@@ -1,0 +1,154 @@
+{
+  "locale": "ja",
+  "status": "AI-reviewed draft; native-speaker review requested; application changes not yet deployed",
+  "pages": [
+    "https://www.gptimagehub.com/ja/models",
+    "https://www.gptimagehub.com/ja/about"
+  ],
+  "modelLabels": [
+    {
+      "key": "modelGuidesTitle",
+      "english": "Choose the right AI image model before you write the prompt",
+      "proposed": "プロンプトを書く前に、用途に合う画像生成モデルを選びましょう"
+    },
+    {
+      "key": "qualityTiers",
+      "english": "quality tiers across selected models",
+      "proposed": "モデルごとに選べる画質設定"
+    },
+    {
+      "key": "officialSources",
+      "english": "official source links on every model page",
+      "proposed": "各モデルページに公式情報へのリンクを掲載"
+    },
+    {
+      "key": "fastAnswer",
+      "english": "Fast answer for model choice",
+      "proposed": "モデル選びのポイント"
+    },
+    {
+      "key": "directAnswer",
+      "english": "Direct answer",
+      "proposed": "要点"
+    },
+    {
+      "key": "careful",
+      "english": "Where to be careful",
+      "proposed": "注意点"
+    },
+    {
+      "key": "visualExamples",
+      "english": "Visual examples",
+      "proposed": "生成例"
+    },
+    {
+      "key": "useThisModel",
+      "english": "Use this model",
+      "proposed": "このモデルで生成"
+    },
+    {
+      "key": "nextTitle",
+      "english": "Start from a prompt template or compare models first",
+      "proposed": "テンプレートから始める、またはモデルを比較する"
+    },
+    {
+      "key": "nextDescription",
+      "english": "Use the generator when you already know the model, or compare all supported models when the prompt needs a different balance of speed, detail, and reference inputs.",
+      "proposed": "使うモデルが決まっていれば、そのまま画像生成へ。速度、細部の表現、参照画像への対応を比べたい場合は、モデル比較をご覧ください。"
+    },
+    {
+      "key": "capabilityMatrix",
+      "english": "Capability matrix",
+      "proposed": "機能比較表"
+    },
+    {
+      "key": "decisionRules",
+      "english": "Decision rules",
+      "proposed": "選び方の目安"
+    }
+  ],
+  "about": {
+    "english": {
+      "path": "/about",
+      "title": "About GPT Image Hub",
+      "description": "GPT Image Hub is a public prompt library, image generation workspace, and agent-readable dataset for GPT Image 2 workflows.",
+      "kicker": "About",
+      "updatedAt": "2026-10-20",
+      "keywords": [
+        "GPT Image Hub",
+        "GPT Image 2 prompt library",
+        "AI image prompt dataset",
+        "agent-readable prompt library"
+      ],
+      "sections": [
+        {
+          "heading": "What GPT Image Hub provides",
+          "body": "GPT Image Hub helps users and AI agents discover, understand, reuse, and generate with structured image prompt templates.",
+          "bullets": [
+            "A public library of image prompt templates with full prompt text.",
+            "Prompt detail pages with metadata, categories, examples, and source fields.",
+            "Machine-readable access through OpenAPI, Agent Skills, MCP, llms.txt, and dataset exports."
+          ]
+        },
+        {
+          "heading": "Who the site is for",
+          "body": "The site is designed for creators, marketers, designers, developers, and AI agents that need reliable image prompt structures instead of one-off prompt snippets.",
+          "bullets": [
+            "Creators can browse and adapt prompt templates.",
+            "Developers can integrate the public API and dataset endpoints.",
+            "AI agents can retrieve full prompt text and canonical metadata."
+          ]
+        },
+        {
+          "heading": "How the site is maintained",
+          "body": "Prompt metadata, categories, and machine-readable endpoints are updated as the library changes. Public discovery surfaces are kept aligned with visible page content.",
+          "bullets": [
+            "Canonical prompt URLs are exposed in sitemap and dataset records.",
+            "Structured data reflects visible page content.",
+            "Attribution and license fields are preserved when available."
+          ]
+        }
+      ]
+    },
+    "proposed": {
+      "title": "GPT Image Hubについて",
+      "description": "GPT Image Hub は、GPT Image 2 向けの公開プロンプトライブラリ、画像生成ワークスペース、AI エージェントが利用できるデータセットを提供します。",
+      "kicker": "サイトについて",
+      "keywords": [
+        "GPT Image Hub",
+        "GPT Image 2 プロンプト ライブラリ",
+        "AI 画像プロンプト データセット",
+        "エージェントが読み取り可能なプロンプト ライブラリ"
+      ],
+      "sections": [
+        {
+          "heading": "GPT Image Hub でできること",
+          "body": "ユーザーや AI エージェントが、構成の整った画像プロンプトを見つけ、内容を理解し、用途に合わせて再利用して画像を生成できます。",
+          "bullets": [
+            "プロンプト全文を読める公開テンプレートライブラリ。",
+            "カテゴリ、作例、出典などを確認できるプロンプト詳細ページ。",
+            "OpenAPI、Agent Skills、MCP、llms.txt、データセットのダウンロードによる機械可読アクセス。"
+          ]
+        },
+        {
+          "heading": "こんな方におすすめ",
+          "body": "画像生成の指示を安定して組み立てたいクリエイター、マーケティング担当者、デザイナー、開発者、AI エージェントに向けたサイトです。",
+          "bullets": [
+            "クリエイターはテンプレートを探し、用途に合わせて調整できます。",
+            "開発者は公開 API やデータセットをアプリに組み込めます。",
+            "AI エージェントはプロンプト全文と正規 URL などの情報を取得できます。"
+          ]
+        },
+        {
+          "heading": "サイトの運営と更新",
+          "body": "ライブラリの変更に合わせて、プロンプトの説明、カテゴリ、機械可読エンドポイントを更新します。検索や AI 向けに公開する情報も、実際のページ内容と一致させています。",
+          "bullets": [
+            "正規のプロンプト URL をサイトマップとデータセットに掲載します。",
+            "構造化データはページに表示される内容を反映します。",
+            "判明している出典、著作者、ライセンス情報を保持します。"
+          ]
+        }
+      ]
+    }
+  }
+}

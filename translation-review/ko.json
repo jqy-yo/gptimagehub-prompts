@@ -1,0 +1,144 @@
+{
+  "locale": "ko",
+  "status": "AI-reviewed draft; native-speaker review requested; application changes not yet deployed",
+  "pages": [
+    "https://www.gptimagehub.com/ko/models",
+    "https://www.gptimagehub.com/ko/about"
+  ],
+  "modelLabels": [
+    {
+      "key": "qualityTiers",
+      "english": "quality tiers across selected models",
+      "proposed": "모델별로 선택할 수 있는 화질 설정"
+    },
+    {
+      "key": "officialSources",
+      "english": "official source links on every model page",
+      "proposed": "각 모델 페이지에서 공식 출처 확인"
+    },
+    {
+      "key": "fastAnswer",
+      "english": "Fast answer for model choice",
+      "proposed": "모델 선택 핵심 요약"
+    },
+    {
+      "key": "directAnswer",
+      "english": "Direct answer",
+      "proposed": "핵심 답변"
+    },
+    {
+      "key": "visualExamples",
+      "english": "Visual examples",
+      "proposed": "생성 예시"
+    },
+    {
+      "key": "useThisModel",
+      "english": "Use this model",
+      "proposed": "이 모델로 생성"
+    },
+    {
+      "key": "nextTitle",
+      "english": "Start from a prompt template or compare models first",
+      "proposed": "프롬프트 템플릿으로 시작하거나 모델을 비교해 보세요"
+    },
+    {
+      "key": "nextDescription",
+      "english": "Use the generator when you already know the model, or compare all supported models when the prompt needs a different balance of speed, detail, and reference inputs.",
+      "proposed": "사용할 모델을 정했다면 바로 이미지를 생성하세요. 속도, 세부 표현, 참조 이미지 지원을 비교하려면 모델 비교를 확인하세요."
+    },
+    {
+      "key": "capabilityMatrix",
+      "english": "Capability matrix",
+      "proposed": "기능 비교표"
+    },
+    {
+      "key": "decisionRules",
+      "english": "Decision rules",
+      "proposed": "모델 선택 기준"
+    }
+  ],
+  "about": {
+    "english": {
+      "path": "/about",
+      "title": "About GPT Image Hub",
+      "description": "GPT Image Hub is a public prompt library, image generation workspace, and agent-readable dataset for GPT Image 2 workflows.",
+      "kicker": "About",
+      "updatedAt": "2026-10-20",
+      "keywords": [
+        "GPT Image Hub",
+        "GPT Image 2 prompt library",
+        "AI image prompt dataset",
+        "agent-readable prompt library"
+      ],
+      "sections": [
+        {
+          "heading": "What GPT Image Hub provides",
+          "body": "GPT Image Hub helps users and AI agents discover, understand, reuse, and generate with structured image prompt templates.",
+          "bullets": [
+            "A public library of image prompt templates with full prompt text.",
+            "Prompt detail pages with metadata, categories, examples, and source fields.",
+            "Machine-readable access through OpenAPI, Agent Skills, MCP, llms.txt, and dataset exports."
+          ]
+        },
+        {
+          "heading": "Who the site is for",
+          "body": "The site is designed for creators, marketers, designers, developers, and AI agents that need reliable image prompt structures instead of one-off prompt snippets.",
+          "bullets": [
+            "Creators can browse and adapt prompt templates.",
+            "Developers can integrate the public API and dataset endpoints.",
+            "AI agents can retrieve full prompt text and canonical metadata."
+          ]
+        },
+        {
+          "heading": "How the site is maintained",
+          "body": "Prompt metadata, categories, and machine-readable endpoints are updated as the library changes. Public discovery surfaces are kept aligned with visible page content.",
+          "bullets": [
+            "Canonical prompt URLs are exposed in sitemap and dataset records.",
+            "Structured data reflects visible page content.",
+            "Attribution and license fields are preserved when available."
+          ]
+        }
+      ]
+    },
+    "proposed": {
+      "title": "GPT Image Hub 소개",
+      "description": "GPT Image Hub는 GPT Image 2를 위한 공개 프롬프트 라이브러리와 이미지 생성 작업 공간, AI 에이전트가 활용할 수 있는 데이터셋을 제공합니다.",
+      "kicker": "소개",
+      "keywords": [
+        "GPT Image Hub",
+        "GPT Image 2 프롬프트 라이브러리",
+        "AI 이미지 프롬프트 데이터세트",
+        "에이전트가 읽을 수 있는 프롬프트 라이브러리"
+      ],
+      "sections": [
+        {
+          "heading": "GPT Image Hub에서 할 수 있는 일",
+          "body": "사용자와 AI 에이전트가 구조화된 이미지 프롬프트 템플릿을 찾고, 내용을 이해하고, 목적에 맞게 수정해 이미지를 생성하도록 돕습니다.",
+          "bullets": [
+            "프롬프트 전문을 확인할 수 있는 공개 템플릿 라이브러리.",
+            "메타데이터, 카테고리, 예시, 출처 정보를 제공하는 프롬프트 상세 페이지.",
+            "OpenAPI, Agent Skills, MCP, llms.txt 및 데이터셋 내보내기를 통한 기계 판독형 접근."
+          ]
+        },
+        {
+          "heading": "이런 분들을 위한 사이트입니다",
+          "body": "체계적인 이미지 생성 지침이 필요한 크리에이터, 마케터, 디자이너, 개발자, AI 에이전트를 위한 사이트입니다.",
+          "bullets": [
+            "크리에이터는 템플릿을 찾아보고 필요에 맞게 수정할 수 있습니다.",
+            "개발자는 공개 API와 데이터셋을 서비스에 연동할 수 있습니다.",
+            "AI 에이전트는 프롬프트 전문과 대표 URL 등의 메타데이터를 가져올 수 있습니다."
+          ]
+        },
+        {
+          "heading": "사이트 운영 및 업데이트",
+          "body": "라이브러리 변경에 맞춰 프롬프트 메타데이터, 카테고리, 기계 판독형 엔드포인트를 업데이트합니다. 검색 및 AI용으로 공개하는 정보는 실제 페이지에 표시되는 내용과 일치하도록 관리합니다.",
+          "bullets": [
+            "대표 프롬프트 URL을 사이트맵과 데이터셋에 제공합니다.",
+            "구조화된 데이터는 페이지에 표시되는 내용을 반영합니다.",
+            "확인된 출처, 저작자, 라이선스 정보를 유지합니다."
+          ]
+        }
+      ]
+    }
+  }
+}

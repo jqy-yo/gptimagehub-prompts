@@ -1,0 +1,29 @@
+{
+  "locale": "de",
+  "status": "AI-reviewed draft; native-speaker review requested; application changes not yet deployed",
+  "pages": [
+    "https://www.gptimagehub.com/de/models"
+  ],
+  "modelLabels": [
+    {
+      "key": "nextDescription",
+      "english": "Use the generator when you already know the model, or compare all supported models when the prompt needs a different balance of speed, detail, and reference inputs.",
+      "proposed": "Wenn Sie sich bereits für ein Modell entschieden haben, können Sie direkt Bilder generieren. Vergleichen Sie die Modelle, wenn Sie Geschwindigkeit, Detailtreue und die Unterstützung von Referenzbildern abwägen möchten."
+    },
+    {
+      "key": "capabilityMatrix",
+      "english": "Capability matrix",
+      "proposed": "Funktionsvergleich"
+    },
+    {
+      "key": "decisionRules",
+      "english": "Decision rules",
+      "proposed": "Auswahlhilfe"
+    },
+    {
+      "key": "useThisModel",
+      "english": "Use this model",
+      "proposed": "Mit diesem Modell generieren"
+    }
+  ]
+}

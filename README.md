@@ -67,3 +67,11 @@ The public remote MCP endpoint is `https://www.gptimagehub.com/mcp` (Streamable 
 这是 GPT Image Hub 的带署名提示词快照，共 286 条。每条保留原作者、原帖、上游合集和许可链接；正文可直接用于检索与改写。仅分发来源已标注 CC BY 4.0 的条目，没有明确许可的其他条目未包含在内。数据不是去重后的评测集，模型字段是模板推荐值。最新分类和内容以官网为准。
 
 如需更正内容或署名，请通过 [官网联系方式](https://www.gptimagehub.com/about) 联系维护者，并提供具体 slug 和来源链接。
+
+## Official MCP Registry
+
+Published as `io.github.jqy-yo/gptimagehub`, version `1.0.0`. [Registry record](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.jqy-yo%2Fgptimagehub). The public remote endpoint responds to initialization and tool discovery.
+
+## Help review translations
+
+Native speakers of Japanese, Korean, German, French, Spanish, and Brazilian Portuguese can review the proposed copy in [translation-review](translation-review). These drafts have received AI review and automated checks; native-speaker sign-off is still pending. See [CONTRIBUTING.md](CONTRIBUTING.md) for the review format.
