@@ -164,7 +164,9 @@ const n = value => value.toLocaleString("en");
 
 function readme({ code, file }, index) {
   const t = TEXT[code];
-  const cell = (entry, oss) => `<td width="33%" valign="top" align="center"><a href="${url(entry.canonical_url)}"><img src="${url(oss ? entry.cover_image_url : image(entry, false))}" width="260" alt="${html(entry.title)}"></a><br><strong><a href="${url(entry.canonical_url)}">${html(entry.title)}</a></strong><br><sub>${oss
+  // Open-source records carry translated titles; the attributed snapshot is English only.
+  const title = (entry, oss) => (oss && entry.translations?.[code]?.title) || entry.title;
+  const cell = (entry, oss) => `<td width="33%" valign="top" align="center"><a href="${url(entry.canonical_url)}"><img src="${url(oss ? entry.cover_image_url : image(entry, false))}" width="260" alt="${html(title(entry, oss))}"></a><br><strong><a href="${url(entry.canonical_url)}">${html(title(entry, oss))}</a></strong><br><sub>${oss
     ? `${t.ossCover}</sub><br><sub>${t.basedOn(`<a href="${url(entry.source_collection)}">${html(collectionName(entry.source_collection))}</a>`, html(entry.license))}`
     : `${t.generated}</sub><br><sub>${t.template}: <a href="${url(entry.source_url ?? entry.canonical_url)}">${html(entry.source_author || "GPT Image Hub")}</a>`}</sub><br><a href="${url(entry.canonical_url)}">${t.view}</a></td>`;
   const cells = [...ossFeatured.map(entry => cell(entry, true)), ...featured.slice(0, 3).map(entry => cell(entry, false))];
