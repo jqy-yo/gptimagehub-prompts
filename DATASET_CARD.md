@@ -25,6 +25,8 @@ configs:
 
 **286 image prompt templates with previews, complete text, and source attribution.**
 
+This dataset is the attributed CC BY 4.0 subset of the GPT Image Hub library, which has 31,000+ templates on the website (live count: https://www.gptimagehub.com/datasets/prompts-manifest.json).
+
 带配图的提示词模板库：按分类看图，点击示例打开模板，直接改写和使用。
 
 [**Browse all 286 previews · 浏览全部配图模板**](https://github.com/jqy-yo/gptimagehub-prompts/blob/main/gallery/README.md) · [**Open GPT Image Hub · 打开官网**](https://www.gptimagehub.com/) · [**20 generated examples · 新生成示例**](https://github.com/jqy-yo/gptimagehub-prompts/blob/main/gallery/generated-examples.md)
