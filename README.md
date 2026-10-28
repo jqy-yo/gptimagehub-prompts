@@ -42,7 +42,7 @@ These six examples were newly generated for GPT Image Hub with the built-in imag
 | [Concept Art · 概念艺术](gallery/concept-art.md) | 4 |
 | [Other · 其他](gallery/other.md) | 8 |
 
-## 28,100 more templates · 开源合集 28,100 条
+## 29,432 more templates · 开源合集 29,432 条
 
 Rewritten, translated (18 languages) and newly illustrated templates based on MIT / CC BY 4.0 GitHub collections. [Data and licenses](data/open-source/README.md) · Galleries: [Portrait & Photography](gallery/open-source/portrait-photography.md) · [Poster & Illustration](gallery/open-source/poster-illustration.md) · [Infographics](gallery/open-source/infographic.md) · [UI / UX Design](gallery/open-source/ui-ux-design.md) · [Character Design](gallery/open-source/character-design.md) · [Product & E-commerce](gallery/open-source/product-ecommerce.md) · [Cinematic](gallery/open-source/cinematic.md) · [Social Media](gallery/open-source/social-media.md) · [Anime & Manga](gallery/open-source/anime-manga.md) · [3D Render](gallery/open-source/3d-render.md) · [Game Assets](gallery/open-source/game-asset.md) · [Logo & Branding](gallery/open-source/logo-branding.md) · [Concept Art](gallery/open-source/concept-art.md) · [Other](gallery/open-source/other.md)
 
