@@ -1,4 +1,4 @@
-import { readFile, mkdir, writeFile } from "node:fs/promises";
+import { readFile, readdir, mkdir, writeFile } from "node:fs/promises";
 
 const rows = (await readFile(new URL("../data/prompts.jsonl", import.meta.url), "utf8")).trim().split("\n").map(JSON.parse);
 const { examples } = JSON.parse(await readFile(new URL("../data/generated-examples.json", import.meta.url), "utf8"));
@@ -46,5 +46,111 @@ await writeFile(new URL("../gallery/generated-examples.md", import.meta.url), `#
 const featuredSlugs = ["agi2-100-luxury-miniature-dubai-city-model", "agi2-35-anime-campers-in-a-winter-tent", "agi2-76-stormy-tropical-city-with-rooftop-plane", "agi2p-27-portrait-photography-musician-leaving-bodega-night-cinematic-portrait", "agi2-112-luxury-amber-perfume-ad", "agi2-26-handwritten-realistic-letter"];
 const featured = featuredSlugs.map(slug => rows.find(row => row.slug === slug));
 if (featured.some(row => !row)) throw new Error("Featured prompt missing from the dataset");
-await writeFile(new URL("../README.md", import.meta.url), `# GPT Image Hub\n\n**${rows.length} image prompt templates with previews, complete text, and source attribution.**\n\n带配图的提示词模板库：按分类看图，点击示例打开模板，直接改写和使用。\n\n[**Browse all ${rows.length} previews · 浏览全部配图模板**](gallery/README.md) · [**Open GPT Image Hub · 打开官网**](https://www.gptimagehub.com/) · [**20 generated examples · 新生成示例**](gallery/generated-examples.md)\n\n## Featured examples · 精选示例\n\n${grid(featured)}\n\nThese six examples were newly generated for GPT Image Hub with the built-in image tool. They illustrate composition and style; the tool does not disclose its model identifier. Each image opens the corresponding template.\n\n## Browse by category · 按分类浏览\n\n| Category · 分类 | Templates · 数量 |\n|---|---:|\n${groups.map(group => `| [${group.title}](gallery/${group.slug}.md) | ${group.rows.length} |`).join("\n")}\n\n## Dataset · 数据集\n\n- [JSONL: complete prompt text, metadata and image URLs](data/prompts.jsonl)\n- [Snapshot manifest and SHA-256](manifest.json)\n- [Live dataset methodology](https://www.gptimagehub.com/prompt-dataset-methodology)\n- [API documentation](https://www.gptimagehub.com/api-docs)\n- [Hugging Face dataset](https://huggingface.co/datasets/jqyyyy/gptimagehub-prompts) · [Dataset card source](DATASET_CARD.md)\n\nEach record includes a title, full prompt text, category, tags, model hint, canonical page, author, source collection, license, \`cover_image_url\`, and \`example_image_urls\`. All ${rows.length} records have a cover; six also have a newly generated example. The remaining source covers are labeled separately in the galleries. Image URLs point to the public CDN, so cloning the repository does not download image binaries.\n\nThe text snapshot was captured on 2026-10-21. Only attributed CC BY 4.0 records from the two source collections below are included; 303 other public records are excluded. Records are not deduplicated across collections. Model hints describe templates, not a verified output model.\n\n\`\`\`python\nimport json\nfrom pathlib import Path\nprompts = [json.loads(line) for line in Path("data/prompts.jsonl").read_text().splitlines()]\nprint(prompts[0]["prompt_text"])\nprint(prompts[0]["cover_image_url"])\n\`\`\`\n\n## Attribution and license · 署名与许可\n\nPrompt text and source metadata are adapted from:\n\n- [Evolink's awesome-gpt-image-2-prompts](https://github.com/BarryYin/awesome-gpt-image-2-prompts), [CC BY 4.0 license](https://github.com/BarryYin/awesome-gpt-image-2-prompts/blob/main/LICENSE), copyright 2026 Evolink.\n- [YouMind OpenLab's awesome-gpt-image-2](https://github.com/YouMind-OpenLab/awesome-gpt-image-2), [CC BY 4.0 license](https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/main/LICENSE), copyright 2026 YouMind OpenLab.\n\nOriginal authors and source URLs are retained per record. GPT Image Hub contributes organization, corrections, export metadata and newly generated illustrative previews. Reuse of the prompt text requires attribution and indication of changes under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Linked images and third-party names have separate rights and are not relicensed by this dataset. Newly generated previews are not original-author works. No endorsement is implied.\n\n如需更正模板或署名，请提供 slug 和原始来源，通过 [官网联系方式](https://www.gptimagehub.com/about) 联系维护者。\n\n## MCP access\n\nOfficial MCP Registry: [\`io.github.jqy-yo/gptimagehub\`, v1.0.0](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.jqy-yo%2Fgptimagehub/versions/1.0.0). Search prompts, retrieve full templates and list categories without an API key using Streamable HTTP:\n\n\`\`\`json\n{"mcpServers":{"gptimagehub":{"url":"https://www.gptimagehub.com/mcp"}}}\n\`\`\`\n\nGeneration requires a separate authenticated workflow and credits. Public discovery does not grant generation access.\n\n## Help review translations\n\nNative speakers of Japanese, Korean, German, French, Spanish, and Brazilian Portuguese can review the proposed copy in [translation-review](translation-review). The drafts have received AI review and automated checks; native-speaker sign-off is still pending. See [CONTRIBUTING.md](CONTRIBUTING.md).\n\n## Rebuild galleries\n\nRun \`node scripts/build-gallery.mjs\` after updating the public dataset or generated example index. This only renders Markdown; it does not call an image generation service.\n`);
+// The open-source collection (data/open-source, written by the import pipeline's export-repo.mjs) has its own galleries.
+const ossDir = new URL("../data/open-source/", import.meta.url);
+const ossRows = (await Promise.all((await readdir(ossDir)).filter(name => name.endsWith(".jsonl")).sort()
+  .map(async name => (await readFile(new URL(name, ossDir), "utf8")).trim().split("\n").map(JSON.parse)))).flat();
+const collectionName = value => new URL(value).pathname.slice(1);
+function ossCard(entry) {
+  return `<td width="33%" valign="top" align="center"><a href="${url(entry.canonical_url)}"><img src="${url(entry.cover_image_url)}" width="260" alt="${html(entry.title)}"></a><br><strong><a href="${url(entry.canonical_url)}">${html(entry.title)}</a></strong><br><sub>Cover generated by GPT Image Hub · 本站生成封面</sub><br><sub>Based on <a href="${url(entry.source_collection)}">${html(collectionName(entry.source_collection))}</a> (${html(entry.license)})</sub><br><a href="${url(entry.canonical_url)}">View / use prompt · 查看模板</a></td>`;
+}
+const ossFeaturedSlugs = ["dramatic-japanese-butadon-food-poster", "banana-robot-toy-product-shot", "retro-footage-of-japanese-suburb", "future-software-engineers-in-2050", "wuxia-mmorpg-gameplay-screenshot", "anime-girl-in-spring-tatami-room"];
+const ossFeatured = ossFeaturedSlugs.map(slug => ossRows.find(row => row.slug === slug));
+if (ossFeatured.some(row => !row)) throw new Error("Featured open-source prompt missing from data/open-source");
+const featuredCells = [...ossFeatured.map(ossCard), ...featured.slice(0, 3).map(entry => card(entry))];
+const featuredGrid = ["<table>", ...Array.from({ length: Math.ceil(featuredCells.length / 3) }, (_, i) => ["<tr>", ...featuredCells.slice(i * 3, i * 3 + 3), "</tr>"]).flat(), "</table>"].join("\n");
+const total = rows.length + ossRows.length;
+const n = value => value.toLocaleString("en");
+const categoryRows = Object.entries(labels).map(([slug, title]) => {
+  const oss = ossRows.filter(row => row.category === slug).length;
+  const own = rows.filter(row => row.category === slug).length;
+  const links = [oss && `[Open-source · 开源合集](gallery/open-source/${slug}.md)`, own && `[Attributed · 署名快照](gallery/${slug}.md)`].filter(Boolean).join(" · ");
+  return { title, count: oss + own, line: `| [${title}](https://www.gptimagehub.com/library/category/${slug}) | ${n(oss + own)} | ${links} |` };
+}).filter(row => row.count).sort((a, b) => b.count - a.count);
+const ossLicenses = Object.entries(Object.groupBy(ossRows, row => row.source_collection))
+  .sort((a, b) => b[1].length - a[1].length)
+  .map(([collection, list]) => `- [${collectionName(collection)}](${collection}) · ${list[0].license} · ${n(list.length)} records`).join("\n");
+
+await writeFile(new URL("../README.md", import.meta.url), `# GPT Image Hub Prompts · 图像提示词模板库
+
+**${n(total)} image prompt templates with previews. Complete prompts in English, Japanese and Chinese; titles, descriptions and tags in 18 languages.**
+
+${n(total)} 个带配图的图像提示词模板：完整提示词有英文、日文、中文三个版本，标题、描述和标签覆盖 18 种语言。按分类看图，点开即可复制使用，也可以在官网直接生成。
+
+[**Open GPT Image Hub · 打开官网**](https://www.gptimagehub.com/) · [**Browse by category · 按分类看图**](#browse-by-category--按分类浏览) · [**Data and licenses · 数据与许可**](#data--数据) · [**MCP**](#mcp-access)
+
+## Featured · 精选
+
+${featuredGrid}
+
+Every image opens the template on the website. Open-source collection covers were newly generated by GPT Image Hub from each prompt; the last three are generated examples for the attributed snapshot.
+
+## Browse by category · 按分类浏览
+
+| Category · 分类 | Templates · 数量 | Galleries · 图集 |
+|---|---:|---|
+${categoryRows.map(row => row.line).join("\n")}
+
+Each gallery shows a sample with previews; every record is in the data files below and on the website.
+
+## Data · 数据
+
+| Dataset · 数据集 | Records · 条数 | License · 许可 | Files · 文件 |
+|---|---:|---|---|
+| Open-source collection · 开源合集 | ${n(ossRows.length)} | MIT or CC BY 4.0, per record | [data/open-source/](data/open-source/README.md) |
+| Attributed snapshot · 署名快照 | ${n(rows.length)} | CC BY 4.0 | [data/prompts.jsonl](data/prompts.jsonl) · [manifest.json](manifest.json) |
+
+**Open-source collection.** Templates based on MIT and CC BY 4.0 GitHub collections, rewritten and reorganized in English with Japanese and Chinese versions, given new titles, descriptions, tags and 18-language translations, and illustrated with newly generated covers. Fields: \`slug\`, \`title\`, \`description\`, \`prompt_text\`, \`prompt_text_ja\`, \`prompt_text_zh\`, \`category\`, \`tags\`, \`model_hint\`, \`aspect_ratio\`, \`canonical_url\`, \`source_collection\`, \`license\`, \`cover_image_url\`, \`translations\`. Files are split by category ([list](data/open-source/README.md)).
+
+**Attributed snapshot.** ${rows.length} CC BY 4.0 records with the original author and post kept per record, captured 2026-10-21. Fields: title, full prompt text, category, tags, model hint, canonical page, author, source URL and collection, license, \`cover_image_url\`, \`example_image_urls\`. Also on [Hugging Face](https://huggingface.co/datasets/jqyyyy/gptimagehub-prompts) ([dataset card](DATASET_CARD.md)).
+
+Image URLs point to the public CDN, so cloning the repository does not download image binaries. Model hints describe templates, not a verified output model.
+
+\`\`\`python
+import json
+from pathlib import Path
+
+prompts = [json.loads(line) for path in sorted(Path("data/open-source").glob("*.jsonl"))
+           for line in path.read_text().splitlines()]
+prompts += [json.loads(line) for line in Path("data/prompts.jsonl").read_text().splitlines()]
+print(len(prompts), prompts[0]["title"], prompts[0]["cover_image_url"])
+\`\`\`
+
+More: [live dataset methodology](https://www.gptimagehub.com/prompt-dataset-methodology) · [API documentation](https://www.gptimagehub.com/api-docs)
+
+## Attribution and license · 署名与许可
+
+Each record keeps the license of its source. Linked images and third-party names have separate rights and are not relicensed. No endorsement is implied.
+
+**Open-source collection** (upstream notices in [LICENSES/](LICENSES/), changes described in [data/open-source/README.md](data/open-source/README.md)):
+
+${ossLicenses}
+
+**Attributed snapshot**, adapted from:
+
+- [Evolink's awesome-gpt-image-2-prompts](https://github.com/BarryYin/awesome-gpt-image-2-prompts), [CC BY 4.0 license](https://github.com/BarryYin/awesome-gpt-image-2-prompts/blob/main/LICENSE), copyright 2026 Evolink.
+- [YouMind OpenLab's awesome-gpt-image-2](https://github.com/YouMind-OpenLab/awesome-gpt-image-2), [CC BY 4.0 license](https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/main/LICENSE), copyright 2026 YouMind OpenLab.
+
+Original authors and source URLs are retained per record. GPT Image Hub contributes organization, corrections, export metadata and newly generated illustrative previews. Reuse of the prompt text requires attribution and indication of changes under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Newly generated previews are not original-author works.
+
+如需更正、署名或下架，请提供 slug 和原始来源，[提交 issue](https://github.com/jqy-yo/gptimagehub-prompts/issues) 或通过 [官网联系方式](https://www.gptimagehub.com/about) 联系维护者。
+
+## MCP access
+
+Official MCP Registry: [\`io.github.jqy-yo/gptimagehub\`, v1.0.0](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.jqy-yo%2Fgptimagehub/versions/1.0.0). Search prompts, retrieve full templates and list categories without an API key using Streamable HTTP:
+
+\`\`\`json
+{"mcpServers":{"gptimagehub":{"url":"https://www.gptimagehub.com/mcp"}}}
+\`\`\`
+
+Generation requires a separate authenticated workflow and credits. Public discovery does not grant generation access.
+
+## Help review translations
+
+Native speakers of Japanese, Korean, German, French, Spanish, and Brazilian Portuguese can review the proposed copy in [translation-review](translation-review). The drafts have received AI review and automated checks; native-speaker sign-off is still pending. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Rebuild galleries
+
+Run \`node scripts/build-gallery.mjs\` after updating either dataset or the generated example index. It renders the attributed snapshot's galleries and this README from the data files; the open-source galleries come from the import pipeline. It only renders Markdown and does not call an image generation service.
+`);
 console.log(`Built ${groups.length} category galleries for ${rows.length} prompts and ${examples.length} generated examples.`);
