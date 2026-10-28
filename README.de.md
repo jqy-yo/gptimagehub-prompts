@@ -2,7 +2,7 @@
 
 # GPT Image Hub Prompts
 
-**29,767 Bild-Prompt-Vorlagen mit Vorschau.** Vollständige Prompts auf Englisch, Japanisch und Chinesisch; Titel, Beschreibungen und Tags in 18 Sprachen. Nach Kategorie stöbern, Vorlage kopieren oder direkt auf der Website generieren.
+**29,767 Bild-Prompt-Vorlagen mit Vorschau**, der offen lizenzierte und mit Quellen versehene Teil der 31,345 Vorlagen auf GPT Image Hub. Vollständige Prompts auf Englisch, Japanisch und Chinesisch; Titel, Beschreibungen und Tags in 18 Sprachen. Nach Kategorie stöbern, Vorlage kopieren oder direkt auf der Website generieren.
 
 [**GPT Image Hub öffnen**](https://www.gptimagehub.com/de) · [**Nach Kategorie stöbern**](#nach-kategorie-stöbern) · [**Daten und Lizenzen**](#daten-und-lizenzen) · [**MCP**](#mcp-zugang)
 

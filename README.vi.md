@@ -2,7 +2,7 @@
 
 # GPT Image Hub Prompts
 
-**29,767 mẫu prompt tạo ảnh kèm ảnh xem trước.** Prompt đầy đủ bằng tiếng Anh, tiếng Nhật và tiếng Trung; tiêu đề, mô tả và thẻ bằng 18 ngôn ngữ. Duyệt theo danh mục, sao chép mẫu hoặc tạo ảnh ngay trên website.
+**29,767 mẫu prompt tạo ảnh kèm ảnh xem trước**, là phần có giấy phép mở và ghi nguồn trong tổng số 31,345 mẫu trên GPT Image Hub. Prompt đầy đủ bằng tiếng Anh, tiếng Nhật và tiếng Trung; tiêu đề, mô tả và thẻ bằng 18 ngôn ngữ. Duyệt theo danh mục, sao chép mẫu hoặc tạo ảnh ngay trên website.
 
 [**Mở GPT Image Hub**](https://www.gptimagehub.com/vi) · [**Duyệt theo danh mục**](#duyệt-theo-danh-mục) · [**Dữ liệu và giấy phép**](#dữ-liệu-và-giấy-phép) · [**MCP**](#truy-cập-mcp)
 

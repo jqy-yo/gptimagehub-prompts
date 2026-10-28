@@ -2,7 +2,7 @@
 
 # GPT Image Hub Prompts
 
-**29,767 image prompt templates with previews.** Complete prompts in English, Japanese and Chinese; titles, descriptions and tags in 18 languages. Browse by category, copy a template, or generate it on the website.
+**29,767 image prompt templates with previews**, the open-licensed and attributed part of the 31,345 templates on GPT Image Hub. Complete prompts in English, Japanese and Chinese; titles, descriptions and tags in 18 languages. Browse by category, copy a template, or generate it on the website.
 
 [**Open GPT Image Hub**](https://www.gptimagehub.com/) · [**Browse by category**](#browse-by-category) · [**Data and licenses**](#data-and-licenses) · [**MCP**](#mcp-access)
 
