@@ -25,7 +25,7 @@ configs:
 
 **286 image prompt templates with previews, complete text, and source attribution.**
 
-This dataset is the attributed CC BY 4.0 subset of the GPT Image Hub library, which has 31,000+ templates on the website (live count: https://www.gptimagehub.com/datasets/prompts-manifest.json).
+This dataset is the attributed CC BY 4.0 subset of the GPT Image Hub library, which has 31,000+ templates on the website (live count: https://www.gptimagehub.com/datasets/prompts-manifest.json). 本数据集是 GPT Image Hub 提示词库中带署名的 CC BY 4.0 子集，网站上共有 31,000+ 个模板。
 
 带配图的提示词模板库：按分类看图，点击示例打开模板，直接改写和使用。
 
