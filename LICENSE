@@ -1,7 +1,7 @@
 CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
 
-See README.md and per-record source attribution for upstream copyright notices and changes.
+See LICENSES/NOTICE.md for upstream copyright notices and changes; original authors and source URLs are kept per record.
 
 This license applies to prompt text and dataset metadata. External linked images and third-party names have separate rights and are not relicensed by this dataset. No image binaries are included.
 
-Records under data/open-source/ are not covered by the line above: each keeps the license of its source collection (MIT or CC BY 4.0), listed in data/open-source/README.md with the upstream notices in LICENSES/.
+Records under data/open-source/ are not covered by the line above: each keeps the license of its source collection (MIT or CC BY 4.0), listed in data/open-source/README.md with the upstream license texts and notices in LICENSES/.

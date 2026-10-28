@@ -91,7 +91,7 @@ print(prompts[0]["cover_image_url"])
 Prompt text and source metadata are adapted from:
 
 - [Evolink's awesome-gpt-image-2-prompts](https://github.com/BarryYin/awesome-gpt-image-2-prompts), [CC BY 4.0 license](https://github.com/BarryYin/awesome-gpt-image-2-prompts/blob/main/LICENSE), copyright 2026 Evolink.
-- [YouMind OpenLab's awesome-gpt-image-2](https://github.com/YouMind-OpenLab/awesome-gpt-image-2), [CC BY 4.0 license](https://github.com/YouMind-OpenLab/awesome-gpt-image-2/blob/main/LICENSE), copyright 2026 YouMind OpenLab.
+- An open-source prompt collection on GitHub, [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/); its copyright notice is in this dataset's LICENSE file.
 
 Original authors and source URLs are retained per record. GPT Image Hub contributes organization, corrections, export metadata and newly generated illustrative previews. Reuse of the prompt text requires attribution and indication of changes under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Linked images and third-party names have separate rights and are not relicensed by this dataset. Newly generated previews are not original-author works. No endorsement is implied.
 
