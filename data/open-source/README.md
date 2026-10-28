@@ -1,8 +1,8 @@
 # Open-source prompt collection · 开源提示词合集
 
-29,432 image prompt templates rewritten and illustrated by [GPT Image Hub](https://www.gptimagehub.com), based on MIT and CC BY 4.0 licensed GitHub collections.
+29,481 image prompt templates rewritten and illustrated by [GPT Image Hub](https://www.gptimagehub.com), based on MIT and CC BY 4.0 licensed GitHub collections.
 
-基于 MIT / CC BY 4.0 开源合集整理的 29,432 个图像提示词模板：重新编写、翻译成 18 种语言，并为每条重新生成了封面。
+基于 MIT / CC BY 4.0 开源合集整理的 29,481 个图像提示词模板：重新编写、翻译成 18 种语言，并为每条重新生成了封面。
 
 ## Files
 
@@ -14,18 +14,18 @@
 | [portrait-photography-04.jsonl](portrait-photography-04.jsonl) | Portrait & Photography · 人像摄影 | 2,000 |
 | [portrait-photography-05.jsonl](portrait-photography-05.jsonl) | Portrait & Photography · 人像摄影 | 2,000 |
 | [portrait-photography-06.jsonl](portrait-photography-06.jsonl) | Portrait & Photography · 人像摄影 | 2,000 |
-| [portrait-photography-07.jsonl](portrait-photography-07.jsonl) | Portrait & Photography · 人像摄影 | 371 |
+| [portrait-photography-07.jsonl](portrait-photography-07.jsonl) | Portrait & Photography · 人像摄影 | 392 |
 | [poster-illustration-01.jsonl](poster-illustration-01.jsonl) | Poster & Illustration · 海报插画 | 2,000 |
 | [poster-illustration-02.jsonl](poster-illustration-02.jsonl) | Poster & Illustration · 海报插画 | 2,000 |
-| [poster-illustration-03.jsonl](poster-illustration-03.jsonl) | Poster & Illustration · 海报插画 | 413 |
-| [infographic.jsonl](infographic.jsonl) | Infographics · 信息图 | 1,158 |
-| [ui-ux-design.jsonl](ui-ux-design.jsonl) | UI / UX Design · 界面设计 | 565 |
-| [character-design.jsonl](character-design.jsonl) | Character Design · 角色设计 | 1,404 |
-| [product-ecommerce.jsonl](product-ecommerce.jsonl) | Product & E-commerce · 商品电商 | 1,453 |
+| [poster-illustration-03.jsonl](poster-illustration-03.jsonl) | Poster & Illustration · 海报插画 | 422 |
+| [infographic.jsonl](infographic.jsonl) | Infographics · 信息图 | 1,159 |
+| [ui-ux-design.jsonl](ui-ux-design.jsonl) | UI / UX Design · 界面设计 | 567 |
+| [character-design.jsonl](character-design.jsonl) | Character Design · 角色设计 | 1,408 |
+| [product-ecommerce.jsonl](product-ecommerce.jsonl) | Product & E-commerce · 商品电商 | 1,455 |
 | [cinematic-01.jsonl](cinematic-01.jsonl) | Cinematic · 电影感画面 | 2,000 |
-| [cinematic-02.jsonl](cinematic-02.jsonl) | Cinematic · 电影感画面 | 261 |
-| [social-media.jsonl](social-media.jsonl) | Social Media · 社交媒体 | 1,131 |
-| [anime-manga.jsonl](anime-manga.jsonl) | Anime & Manga · 动漫 | 1,992 |
+| [cinematic-02.jsonl](cinematic-02.jsonl) | Cinematic · 电影感画面 | 264 |
+| [social-media.jsonl](social-media.jsonl) | Social Media · 社交媒体 | 1,133 |
+| [anime-manga.jsonl](anime-manga.jsonl) | Anime & Manga · 动漫 | 1,997 |
 | [3d-render.jsonl](3d-render.jsonl) | 3D Render · 三维渲染 | 760 |
 | [game-asset.jsonl](game-asset.jsonl) | Game Assets · 游戏素材 | 316 |
 | [logo-branding.jsonl](logo-branding.jsonl) | Logo & Branding · 品牌设计 | 180 |
@@ -38,8 +38,8 @@ Each JSONL line has: `slug`, `title`, `description`, `prompt_text` (English), `p
 
 | Collection | License | Records |
 |---|---|---:|
-| [YouMind OpenLab · gpt-image-2-prompts-search](https://github.com/YouMind-OpenLab/gpt-image-2-prompts-search) | MIT © YouMind (stated in the repository README) ([text](../../LICENSES/LICENSE-YouMind-OpenLab_gpt-image-2-prompts-search)) | 16,640 |
-| [YouMind OpenLab · ai-image-prompts-skill](https://github.com/YouMind-OpenLab/ai-image-prompts-skill) | MIT, Copyright (c) 2026 YouMind-OpenLab ([text](../../LICENSES/LICENSE-YouMind-OpenLab_ai-image-prompts-skill)) | 12,211 |
+| [YouMind OpenLab · gpt-image-2-prompts-search](https://github.com/YouMind-OpenLab/gpt-image-2-prompts-search) | MIT © YouMind (stated in the repository README) ([text](../../LICENSES/LICENSE-YouMind-OpenLab_gpt-image-2-prompts-search)) | 16,671 |
+| [YouMind OpenLab · ai-image-prompts-skill](https://github.com/YouMind-OpenLab/ai-image-prompts-skill) | MIT, Copyright (c) 2026 YouMind-OpenLab ([text](../../LICENSES/LICENSE-YouMind-OpenLab_ai-image-prompts-skill)) | 12,229 |
 | [freestylefly · awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) | MIT, Copyright (c) 2026 freestylefly ([text](../../LICENSES/LICENSE-freestylefly_awesome-gpt-image-2)) | 396 |
 | [YouMind OpenLab · awesome-seedream-4.5](https://github.com/YouMind-OpenLab/awesome-seedream-4.5) | CC BY 4.0, Copyright (c) 2025 YouMind OpenLab ([text](../../LICENSES/LICENSE-YouMind-OpenLab_awesome-seedream-4.5)) | 104 |
 | [ZeroLu · awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) | MIT, Copyright (c) 2025 ZeroLu ([text](../../LICENSES/LICENSE-ZeroLu_awesome-nanobanana-pro)) | 56 |
