@@ -23,6 +23,10 @@ configs:
 
 # GPT Image Hub
 
+GPT Image Hub is an open-source dataset of 30,000+ AI image prompt templates for GPT Image 2, Nano Banana and more.
+
+**Browse by model:** [GPT Image Hub](https://www.gptimagehub.com/) · [GPT Image 2](https://www.gptimagehub.com/gpt-image-2-prompts) · [Nano Banana Pro](https://www.gptimagehub.com/nano-banana-pro-prompts) · [Nano Banana 2](https://www.gptimagehub.com/nano-banana-2-prompts) · [Seedream](https://www.gptimagehub.com/seedream-prompts) · [GPT Image 2 vs Nano Banana](https://www.gptimagehub.com/guides/gpt-image-2-vs-nano-banana)
+
 **286 image prompt templates with previews, complete text, and source attribution.**
 
 This dataset is the attributed CC BY 4.0 subset of the GPT Image Hub library, which has 31,000+ templates on the website (live count: https://www.gptimagehub.com/datasets/prompts-manifest.json). 本数据集是 GPT Image Hub 提示词库中带署名的 CC BY 4.0 子集，网站上共有 31,000+ 个模板。

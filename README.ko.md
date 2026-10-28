@@ -2,9 +2,13 @@
 
 # GPT Image Hub Prompts
 
+GPT Image Hub is an open-source dataset of 30,000+ AI image prompt templates for GPT Image 2, Nano Banana and more.
+
 **미리보기가 있는 이미지 프롬프트 템플릿 29,767개**는 GPT Image Hub 전체 템플릿 31,345개 중 오픈 라이선스와 출처 표기가 있는 부분입니다. 전체 프롬프트는 영어·일본어·중국어로, 제목·설명·태그는 18개 언어로 제공합니다. 카테고리별로 둘러보고 템플릿을 복사하거나 웹사이트에서 바로 생성하세요.
 
 [**GPT Image Hub 열기**](https://www.gptimagehub.com/ko) · [**카테고리별 보기**](#카테고리별-보기) · [**데이터와 라이선스**](#데이터와-라이선스) · [**MCP**](#mcp-연동)
+
+**모델별 보기:** [GPT Image Hub](https://www.gptimagehub.com/) · [GPT Image 2](https://www.gptimagehub.com/gpt-image-2-prompts) · [Nano Banana Pro](https://www.gptimagehub.com/nano-banana-pro-prompts) · [Nano Banana 2](https://www.gptimagehub.com/nano-banana-2-prompts) · [Seedream](https://www.gptimagehub.com/seedream-prompts) · [GPT Image 2 vs Nano Banana](https://www.gptimagehub.com/guides/gpt-image-2-vs-nano-banana)
 
 ## 추천
 
